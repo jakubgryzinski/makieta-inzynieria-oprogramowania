@@ -1,0 +1,97 @@
+{
+  "auth": {
+    "title": "Wybierz typ użytkownika",
+    "roles": {
+      "organizator": "Organizator",
+      "trener": "Trener",
+      "sedzia": "Sędzia",
+      "zawodnik": "Zawodnik"
+    },
+    "submit": "Zaloguj"
+  },
+  "common": {
+    "navbar": {
+      "logout": "Wyloguj",
+      "zawodnik": {
+        "dashboard": "Panel",
+        "harmonogram": "Harmonogram",
+        "ranking": "Ranking",
+        "drabinka": "Drabinka"
+      },
+      "trener": {
+        "dashboard": "Panel",
+        "rejestracja": "Rejestracja",
+        "rejestracjaDruzynowa": "Rejestracja drużynowa",
+        "zawodnicy": "Zawodnicy",
+        "dyscypliny": "Dyscypliny"
+      },
+      "sedzia": {
+        "harmonogram": "Harmonogram",
+        "zapisywanieWynikow": "Zapisywanie wyników"
+      },
+      "organizator": {
+        "dashboard": "Panel",
+        "konfiguracja": "Konfiguracja",
+        "konkurencje": "Konkurencje",
+        "zasoby": "Zasoby",
+        "harmonogram": "Harmonogram"
+      }
+    }
+  },
+  "organizator": {
+    "dashboard": {
+      "title": "Panel organizatora"
+    },
+    "konfiguracja": {
+      "title": "Konfiguracja turnieju"
+    },
+    "konkurencje": {
+      "title": "Konkurencje"
+    },
+    "zasoby": {
+      "title": "Zasoby"
+    },
+    "harmonogram": {
+      "title": "Harmonogram"
+    }
+  },
+  "sedzia": {
+    "harmonogram": {
+      "title": "Harmonogram"
+    },
+    "zapisywanieWynikow": {
+      "title": "Zapisywanie wyników"
+    }
+  },
+  "trener": {
+    "dashboard": {
+      "title": "Panel trenera"
+    },
+    "rejestracja": {
+      "title": "Rejestracja zawodnika"
+    },
+    "rejestracjaDruzynowa": {
+      "title": "Rejestracja drużynowa"
+    },
+    "zawodnicy": {
+      "title": "Zawodnicy"
+    },
+    "dyscypliny": {
+      "title": "Dyscypliny"
+    }
+  },
+  "zawodnik": {
+    "dashboard": {
+      "title": "Jan Kowalski"
+    },
+    "harmonogram": {
+      "title": "Harmonogram"
+    },
+    "ranking": {
+      "title": "Ranking"
+    },
+    "drabinka": {
+      "title": "Drabinka"
+    }
+  }
+}
