@@ -1,0 +1,19 @@
+.zawodnik-ranking {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.zawodnik-ranking__title {
+  color: #ecf0f1;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 0 1rem 0;
+}
+
+.zawodnik-ranking__subtitle {
+  color: #ecf0f1;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 2rem 0 1rem 0;
+}

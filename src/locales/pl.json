@@ -10,6 +10,7 @@
     "submit": "Zaloguj"
   },
   "common": {
+    "loading": "Ładowanie...",
     "navbar": {
       "logout": "Wyloguj",
       "zawodnik": {
@@ -82,16 +83,44 @@
   },
   "zawodnik": {
     "dashboard": {
-      "title": "Jan Kowalski"
+      "title": "Jan Kowalski",
+      "upcomingMatch": "Najbliższy występ",
+      "noUpcomingMatch": "Brak zaplanowanych występów",
+      "date": "Data",
+      "mat": "Mata",
+      "opponent": "Przeciwnik"
     },
     "harmonogram": {
-      "title": "Harmonogram"
+      "title": "Harmonogram",
+      "competition": "Konkurencja",
+      "time": "Godzina",
+      "mat": "Mata",
+      "round": "Runda",
+      "opponent": "Przeciwnik",
+      "status": "Status",
+      "noMatches": "Brak zaplanowanych występów"
     },
     "ranking": {
-      "title": "Ranking"
+      "title": "Ranking",
+      "position": "Pozycja",
+      "change": "Zmiana",
+      "points": "Punkty",
+      "updateDate": "Data aktualizacji",
+      "tableTitle": "Tabela rankingowa",
+      "tablePosition": "Pozycja",
+      "competitor": "Zawodnik",
+      "club": "Klub"
     },
     "drabinka": {
-      "title": "Drabinka"
+      "title": "Drabinka",
+      "selectCompetition": "Wybierz konkurencję",
+      "chooseCompetition": "-- Wybierz konkurencję --",
+      "noBracket": "Brak drabinki dla wybranej konkurencji",
+      "tbd": "Do ustalenia",
+      "round16": "1/8 finału",
+      "quarterfinals": "Ćwierćfinały",
+      "semifinals": "Półfinały",
+      "final": "Finał"
     }
   }
 }

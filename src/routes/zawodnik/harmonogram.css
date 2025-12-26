@@ -1,0 +1,18 @@
+.zawodnik-harmonogram {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.zawodnik-harmonogram__title {
+  color: #ecf0f1;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 0 2rem 0;
+}
+
+.zawodnik-harmonogram__no-matches {
+  color: #95a5a6;
+  font-size: 1rem;
+  font-style: italic;
+}

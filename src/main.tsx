@@ -14,14 +14,18 @@ declare module '@tanstack/react-router' {
   }
 }
 
-if (import.meta.env.DEV) {
-  worker.start({
-    onUnhandledRequest: 'bypass',
-  });
+async function enableMocking() {
+  if (import.meta.env.DEV) {
+    await worker.start({
+      onUnhandledRequest: 'bypass',
+    });
+  }
 }
 
-createRoot(document.getElementById('root')!).render(
-  <StrictMode>
-    <RouterProvider router={router} />
-  </StrictMode>
-);
+enableMocking().then(() => {
+  createRoot(document.getElementById('root')!).render(
+    <StrictMode>
+      <RouterProvider router={router} />
+    </StrictMode>
+  );
+});
