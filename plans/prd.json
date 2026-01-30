@@ -174,7 +174,7 @@
             "Click 'Download CSV' button",
             "Verify alert shows 'Pobiera...'"
         ],
-        "passes": false
+        "passes": true
     },
     {
         "category": "organizator",

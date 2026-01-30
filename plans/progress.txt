@@ -166,3 +166,17 @@ Task 12 DONE: organizator - Competition management CRUD works
   - Success toast on add/delete (3s auto-dismiss)
 - Updated konkurencje.tsx route to use CompetitionsTable
 - Updated pl.json translations for organizator.konkurencje.*
+
+Task 13 DONE: organizator - Resources view shows equipment and awards
+- Added mock data: mockEquipment (6 items), mockAwards (8 items)
+- Added OrganizatorService methods: getEquipment(), getAwards()
+- Added MSW handlers: GET /api/v1/organizator/equipment, GET /api/v1/organizator/awards
+- Added hooks: useEquipment, useAwards
+- Created ResourcesView component with:
+  - Tabs: Equipment (active by default) / Awards
+  - Equipment table: name, quantity, status (badge: dostepny/w_uzyciu/uszkodzony)
+  - Awards table: name, competition, quantity
+  - Download PDF button - shows alert "Pobiera..."
+  - Download CSV button - shows alert "Pobiera..."
+- Updated zasoby.tsx route to use ResourcesView
+- Updated pl.json translations for organizator.zasoby.*

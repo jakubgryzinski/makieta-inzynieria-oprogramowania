@@ -1,0 +1,107 @@
+.resources {
+  padding: 20px;
+}
+
+.resources__tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 8px;
+}
+
+.resources__tab {
+  padding: 10px 20px;
+  background: none;
+  border: none;
+  border-radius: 4px 4px 0 0;
+  cursor: pointer;
+  font-size: 14px;
+  color: #666;
+  transition: all 0.2s;
+}
+
+.resources__tab:hover {
+  background-color: #f0f0f0;
+}
+
+.resources__tab--active {
+  background-color: #007bff;
+  color: white;
+}
+
+.resources__tab--active:hover {
+  background-color: #0056b3;
+}
+
+.resources__actions {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.resources__download-btn {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.resources__download-btn:hover {
+  background-color: #218838;
+}
+
+.resources__loading {
+  padding: 20px;
+  text-align: center;
+  color: #666;
+}
+
+.resources__table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.resources__table th,
+.resources__table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.resources__table th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+}
+
+.resources__table tr:hover {
+  background-color: #f5f5f5;
+}
+
+.resources__status-badge {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.resources__status-badge--available {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.resources__status-badge--in-use {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.resources__status-badge--damaged {
+  background-color: #f8d7da;
+  color: #721c24;
+}

@@ -6,6 +6,8 @@ import type {
   Competition,
   CompetitionCreate,
   CompetitionResponse,
+  Equipment,
+  Award,
 } from '../types';
 
 class OrganizatorService {
@@ -33,6 +35,16 @@ class OrganizatorService {
 
   async deleteCompetition(id: string): Promise<CompetitionResponse> {
     const { data } = await this.fetchService.delete<CompetitionResponse>(`/organizator/competitions/${id}`);
+    return data;
+  }
+
+  async getEquipment(): Promise<Equipment[]> {
+    const { data } = await this.fetchService.get<Equipment[]>('/organizator/equipment');
+    return data;
+  }
+
+  async getAwards(): Promise<Award[]> {
+    const { data } = await this.fetchService.get<Award[]>('/organizator/awards');
     return data;
   }
 }

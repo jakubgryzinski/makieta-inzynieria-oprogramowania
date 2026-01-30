@@ -127,7 +127,29 @@
       }
     },
     "zasoby": {
-      "title": "Zasoby"
+      "title": "Zasoby",
+      "loading": "Ladowanie...",
+      "tabs": {
+        "equipment": "Sprzet",
+        "awards": "Nagrody"
+      },
+      "downloadPDF": "Pobierz PDF",
+      "downloadCSV": "Pobierz CSV",
+      "equipment": {
+        "name": "Nazwa",
+        "quantity": "Ilosc",
+        "status": "Status"
+      },
+      "awards": {
+        "name": "Nazwa",
+        "competition": "Konkurencja",
+        "quantity": "Ilosc"
+      },
+      "statuses": {
+        "dostepny": "Dostepny",
+        "w_uzyciu": "W uzyciu",
+        "uszkodzony": "Uszkodzony"
+      }
     },
     "harmonogram": {
       "title": "Harmonogram"

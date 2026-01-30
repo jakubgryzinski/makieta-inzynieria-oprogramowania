@@ -1,4 +1,4 @@
-import type { TournamentStats, Competition } from '../types';
+import type { TournamentStats, Competition, Equipment, Award } from '../types';
 
 export const mockTournamentStats: TournamentStats = {
   competitors: 156,
@@ -23,4 +23,24 @@ export const mockCompetitions: Competition[] = [
   { id: '13', name: 'Kumite Senior M -75kg', type: 'kumite', gender: 'M', ageMin: 18, ageMax: 35, weightMin: 65, weightMax: 75, participants: 14 },
   { id: '14', name: 'Kumite Senior M +75kg', type: 'kumite', gender: 'M', ageMin: 18, ageMax: 35, weightMin: 75, weightMax: 100, participants: 11 },
   { id: '15', name: 'Kumite Senior K -61kg', type: 'kumite', gender: 'K', ageMin: 18, ageMax: 35, weightMin: 50, weightMax: 61, participants: 9 },
+];
+
+export const mockEquipment: Equipment[] = [
+  { id: '1', name: 'Mata do karate', quantity: 12, status: 'dostepny' },
+  { id: '2', name: 'Rękawice kumite', quantity: 50, status: 'w_uzyciu' },
+  { id: '3', name: 'Ochraniacze na goleń', quantity: 40, status: 'dostepny' },
+  { id: '4', name: 'Ochraniacze na klatkę', quantity: 30, status: 'dostepny' },
+  { id: '5', name: 'Stoper elektroniczny', quantity: 8, status: 'w_uzyciu' },
+  { id: '6', name: 'Tablica wyników', quantity: 2, status: 'uszkodzony' },
+];
+
+export const mockAwards: Award[] = [
+  { id: '1', name: 'Złoty medal', competition: 'Kata Indywidualne Senior M', quantity: 1 },
+  { id: '2', name: 'Srebrny medal', competition: 'Kata Indywidualne Senior M', quantity: 1 },
+  { id: '3', name: 'Brązowy medal', competition: 'Kata Indywidualne Senior M', quantity: 2 },
+  { id: '4', name: 'Złoty medal', competition: 'Kumite Senior M -75kg', quantity: 1 },
+  { id: '5', name: 'Srebrny medal', competition: 'Kumite Senior M -75kg', quantity: 1 },
+  { id: '6', name: 'Brązowy medal', competition: 'Kumite Senior M -75kg', quantity: 2 },
+  { id: '7', name: 'Puchar zwycięzcy', competition: 'Ogólna klasyfikacja', quantity: 1 },
+  { id: '8', name: 'Dyplom uczestnictwa', competition: 'Wszyscy', quantity: 156 },
 ];

@@ -1,5 +1,5 @@
 import { http, HttpResponse } from 'msw';
-import { mockTournamentStats, mockCompetitions } from './data';
+import { mockTournamentStats, mockCompetitions, mockEquipment, mockAwards } from './data';
 import type { CompetitionCreate, Competition } from '../types';
 
 let competitions = [...mockCompetitions];
@@ -42,5 +42,13 @@ export const organizatorHandlers = [
       success: true,
       message: 'Competition deleted successfully',
     });
+  }),
+
+  http.get('/api/v1/organizator/equipment', () => {
+    return HttpResponse.json(mockEquipment);
+  }),
+
+  http.get('/api/v1/organizator/awards', () => {
+    return HttpResponse.json(mockAwards);
   }),
 ];
