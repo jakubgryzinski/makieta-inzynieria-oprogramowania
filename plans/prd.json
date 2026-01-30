@@ -1,0 +1,191 @@
+[
+    {
+        "category": "trener",
+        "description": "Dashboard shows competitors table with next matches",
+        "steps": [
+            "Navigate to /trener/dashboard",
+            "Verify table displays 5 competitors",
+            "Check columns: name, competitions, next match",
+            "Verify 'Register competitor' button exists",
+            "Click button navigates to /trener/rejestracja"
+        ],
+        "passes": false
+    },
+    {
+        "category": "trener",
+        "description": "Individual competitor registration form works",
+        "steps": [
+            "Navigate to /trener/rejestracja",
+            "Fill required fields: imie, nazwisko, wiek, waga, plec",
+            "Check medical exam checkbox",
+            "Select at least one competition (kata/kumite)",
+            "Select age category from dropdown",
+            "Select weight category if kumite selected",
+            "Submit form",
+            "Verify success toast appears",
+            "Verify POST request sent to API"
+        ],
+        "passes": false
+    },
+    {
+        "category": "trener",
+        "description": "Registration form validates input correctly",
+        "steps": [
+            "Navigate to /trener/rejestracja",
+            "Submit empty form",
+            "Verify validation errors appear",
+            "Enter invalid age (5 or 100)",
+            "Verify age validation error",
+            "Uncheck medical exam",
+            "Verify medical exam required error"
+        ],
+        "passes": false
+    },
+    {
+        "category": "trener",
+        "description": "Team registration form works",
+        "steps": [
+            "Navigate to /trener/rejestracja-druzynowa",
+            "Enter team name",
+            "Select type (kata/kumite)",
+            "Select age category",
+            "Select 3-7 team members via checkboxes",
+            "Verify counter shows selected count",
+            "Submit form",
+            "Verify success toast appears"
+        ],
+        "passes": false
+    },
+    {
+        "category": "trener",
+        "description": "Competitors list shows full details",
+        "steps": [
+            "Navigate to /trener/zawodnicy",
+            "Verify table displays 8 competitors",
+            "Check columns: name, age, competitions, next match, last result"
+        ],
+        "passes": false
+    },
+    {
+        "category": "trener",
+        "description": "Disciplines view shows cards and participants",
+        "steps": [
+            "Navigate to /trener/dyscypliny",
+            "Verify 6 discipline cards displayed",
+            "Each card shows: name, participant count, status",
+            "Click 'View participants' on a card",
+            "Verify participants table appears",
+            "Check columns: position, name, club, age, weight"
+        ],
+        "passes": false
+    },
+    {
+        "category": "sedzia",
+        "description": "Schedule shows assigned matches",
+        "steps": [
+            "Navigate to /sedzia/harmonogram",
+            "Verify table displays 12 matches",
+            "Check columns: time, mat, competition, competitors, status, actions",
+            "Verify 'Enter result' button in actions column",
+            "Click button navigates to /sedzia/zapisywanie-wynikow"
+        ],
+        "passes": false
+    },
+    {
+        "category": "sedzia",
+        "description": "Kumite result entry works",
+        "steps": [
+            "Navigate to /sedzia/zapisywanie-wynikow",
+            "Select kumite competition from dropdown",
+            "Verify two competitor names displayed",
+            "Enter points for both competitors (0-10)",
+            "Select winner radio",
+            "Submit form",
+            "Verify success toast appears",
+            "Verify POST request sent to API"
+        ],
+        "passes": false
+    },
+    {
+        "category": "sedzia",
+        "description": "Kata result entry works",
+        "steps": [
+            "Navigate to /sedzia/zapisywanie-wynikow",
+            "Select kata competition from dropdown",
+            "Select competitor from dropdown",
+            "Enter technical points (0-10)",
+            "Enter athletic points (0-10)",
+            "Submit form",
+            "Verify success toast appears"
+        ],
+        "passes": false
+    },
+    {
+        "category": "organizator",
+        "description": "Dashboard shows tournament statistics",
+        "steps": [
+            "Navigate to /organizator/dashboard",
+            "Verify 4 stat cards displayed",
+            "Check: competitors (156), competitions (24), mats (6), referees (18)"
+        ],
+        "passes": false
+    },
+    {
+        "category": "organizator",
+        "description": "Tournament configuration form works",
+        "steps": [
+            "Navigate to /organizator/konfiguracja",
+            "Fill tournament name, date, location",
+            "Enter number of mats, warm-up stations, rest stations",
+            "Enter number of referees, max competitors per coach",
+            "Submit form",
+            "Verify success toast appears",
+            "Verify POST request sent to API"
+        ],
+        "passes": false
+    },
+    {
+        "category": "organizator",
+        "description": "Competition management CRUD works",
+        "steps": [
+            "Navigate to /organizator/konkurencje",
+            "Verify table displays 15 competitions",
+            "Click 'Add competition' button",
+            "Verify modal opens",
+            "Fill form: type, category, gender, age range, weight range",
+            "Submit modal",
+            "Verify new competition in table",
+            "Click delete on a competition",
+            "Verify competition removed"
+        ],
+        "passes": false
+    },
+    {
+        "category": "organizator",
+        "description": "Resources view shows equipment and awards",
+        "steps": [
+            "Navigate to /organizator/zasoby",
+            "Verify Equipment tab active by default",
+            "Check equipment table has 6 rows",
+            "Switch to Awards tab",
+            "Verify awards table loads",
+            "Click 'Download PDF' button",
+            "Verify alert shows 'Pobiera...'",
+            "Click 'Download CSV' button",
+            "Verify alert shows 'Pobiera...'"
+        ],
+        "passes": false
+    },
+    {
+        "category": "organizator",
+        "description": "Schedule shows mat assignments",
+        "steps": [
+            "Navigate to /organizator/harmonogram",
+            "Verify mat schedule table displayed",
+            "Check columns: time, mat1-6, referees",
+            "Select competition from dropdown",
+            "Verify bracket tree displays for selected competition"
+        ],
+        "passes": false
+    }
+]
