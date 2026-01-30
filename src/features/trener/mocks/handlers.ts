@@ -1,5 +1,5 @@
 import { http, HttpResponse } from 'msw';
-import { mockCoachCompetitors, mockFullCompetitors, mockTeamMembers } from './data';
+import { mockCoachCompetitors, mockDisciplineParticipants, mockDisciplines, mockFullCompetitors, mockTeamMembers } from './data';
 
 export const trenerHandlers = [
   http.get('/api/v1/trener/competitors', () => {
@@ -26,5 +26,15 @@ export const trenerHandlers = [
 
   http.get('/api/v1/trener/competitors/full', () => {
     return HttpResponse.json(mockFullCompetitors);
+  }),
+
+  http.get('/api/v1/trener/disciplines', () => {
+    return HttpResponse.json(mockDisciplines);
+  }),
+
+  http.get('/api/v1/trener/disciplines/:disciplineId/participants', ({ params }) => {
+    const { disciplineId } = params;
+    const participants = mockDisciplineParticipants[disciplineId as string] || [];
+    return HttpResponse.json(participants);
   }),
 ];

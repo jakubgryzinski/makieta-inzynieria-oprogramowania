@@ -69,3 +69,22 @@ export interface FullCompetitor {
     date: string;
   } | null;
 }
+
+export type DisciplineStatus = 'aktywna' | 'zakonczona' | 'oczekujaca';
+
+export interface Discipline {
+  id: string;
+  name: string;
+  participantCount: number;
+  status: DisciplineStatus;
+}
+
+export interface DisciplineParticipant {
+  id: string;
+  position: number;
+  firstName: string;
+  lastName: string;
+  club: string;
+  age: number;
+  weight: number;
+}

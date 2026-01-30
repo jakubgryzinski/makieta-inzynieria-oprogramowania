@@ -155,7 +155,23 @@
       }
     },
     "dyscypliny": {
-      "title": "Dyscypliny"
+      "title": "Dyscypliny",
+      "participants": "Uczestników",
+      "viewParticipants": "Zobacz uczestników",
+      "close": "Zamknij",
+      "noParticipants": "Brak uczestników",
+      "statuses": {
+        "aktywna": "Aktywna",
+        "zakonczona": "Zakończona",
+        "oczekujaca": "Oczekująca"
+      },
+      "participantsTable": {
+        "position": "Pozycja",
+        "name": "Imię i nazwisko",
+        "club": "Klub",
+        "age": "Wiek",
+        "weight": "Waga"
+      }
     }
   },
   "zawodnik": {

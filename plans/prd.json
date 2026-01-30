@@ -77,7 +77,7 @@
             "Verify participants table appears",
             "Check columns: position, name, club, age, weight"
         ],
-        "passes": false
+        "passes": true
     },
     {
         "category": "sedzia",

@@ -59,3 +59,18 @@ Task 5 DONE: Competitors list shows full details
   - "Brak" text for null values
 - Updated zawodnicy.tsx route to use component
 - Updated pl.json translations for zawodnicy.table.*
+
+Task 6 DONE: Disciplines view shows cards and participants
+- Added types: DisciplineStatus, Discipline, DisciplineParticipant
+- Added mock data: mockDisciplines (6 disciplines), mockDisciplineParticipants (5 per discipline)
+- Added TrenerService.getDisciplines(), getDisciplineParticipants(id) methods
+- Added MSW handlers: GET /api/v1/trener/disciplines, GET /api/v1/trener/disciplines/:id/participants
+- Added hooks: useDisciplines, useDisciplineParticipants
+- Created DisciplinesView component with:
+  - Grid of 6 discipline cards
+  - Each card shows: name, participant count, status badge (aktywna/zakonczona/oczekujaca)
+  - "Zobacz uczestników" button opens participants table
+  - Participants table columns: position, name, club, age, weight
+  - Close button to hide table
+- Updated dyscypliny.tsx route to use DisciplinesView
+- Updated pl.json translations for dyscypliny.*
