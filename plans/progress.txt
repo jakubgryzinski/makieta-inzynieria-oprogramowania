@@ -5,3 +5,19 @@ Task 1 DONE: Trener Dashboard - competitors table with next matches
 - "Zarejestruj zawodnika" button links to /trener/rejestracja
 - Updated translations, MSW handlers
 - Fixed pre-existing TS errors in user.ts and Navbar.tsx
+
+Task 2 DONE: Individual competitor registration form
+- Added types: Gender, AgeCategory, WeightCategory, CompetitorRegistration
+- Added TrenerService.registerCompetitor() POST method
+- Added useRegisterCompetitor hook with useMutation
+- Added MSW POST handler /api/v1/trener/competitors
+- Created CompetitorRegistrationForm component with:
+  - Fields: firstName, lastName, age, weight, gender (radio)
+  - Checkbox: medicalExam (required)
+  - Checkboxes: kata/kumite (at least one required)
+  - Dropdown: ageCategory (dzieci/mlodzik/junior/senior)
+  - Dropdown: weightCategory (conditional - only when kumite selected)
+  - Zod validation with error messages
+  - Success toast on submit (3s auto-dismiss)
+- Updated pl.json translations for all form labels/errors
+- Updated route /trener/rejestracja to use form component

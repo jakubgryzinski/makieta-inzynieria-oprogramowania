@@ -76,7 +76,49 @@
       }
     },
     "rejestracja": {
-      "title": "Rejestracja zawodnika"
+      "title": "Rejestracja zawodnika",
+      "firstName": "Imię",
+      "lastName": "Nazwisko",
+      "age": "Wiek",
+      "weight": "Waga (kg)",
+      "gender": "Płeć",
+      "genderM": "Mężczyzna",
+      "genderK": "Kobieta",
+      "medicalExam": "Badania lekarskie",
+      "competitions": "Konkurencje",
+      "kata": "Kata indywidualne",
+      "kumite": "Kumite indywidualne",
+      "ageCategory": "Kategoria wiekowa",
+      "ageCategoryPlaceholder": "-- Wybierz kategorię wiekową --",
+      "ageCategories": {
+        "dzieci": "Dzieci (8-11)",
+        "mlodzik": "Młodzik (12-13)",
+        "junior": "Junior (14-17)",
+        "senior": "Senior (18+)"
+      },
+      "weightCategory": "Kategoria wagowa",
+      "weightCategoryPlaceholder": "-- Wybierz kategorię wagową --",
+      "weightCategories": {
+        "lekka": "Lekka",
+        "srednia": "Średnia",
+        "ciezka": "Ciężka"
+      },
+      "submit": "Zarejestruj",
+      "success": "Zawodnik został pomyślnie zarejestrowany",
+      "errors": {
+        "firstNameRequired": "Imię jest wymagane",
+        "lastNameRequired": "Nazwisko jest wymagane",
+        "ageRequired": "Wiek jest wymagany",
+        "ageMin": "Wiek minimalny to 8 lat",
+        "ageMax": "Wiek maksymalny to 50 lat",
+        "weightRequired": "Waga jest wymagana",
+        "weightMin": "Waga minimalna to 20 kg",
+        "genderRequired": "Płeć jest wymagana",
+        "medicalExamRequired": "Badania lekarskie są wymagane",
+        "competitionRequired": "Wybierz przynajmniej jedną konkurencję",
+        "ageCategoryRequired": "Kategoria wiekowa jest wymagana",
+        "weightCategoryRequired": "Kategoria wagowa jest wymagana dla kumite"
+      }
     },
     "rejestracjaDruzynowa": {
       "title": "Rejestracja drużynowa"
