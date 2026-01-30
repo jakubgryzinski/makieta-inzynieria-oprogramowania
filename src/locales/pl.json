@@ -139,7 +139,7 @@
         "typeRequired": "Typ konkurencji jest wymagany",
         "ageCategoryRequired": "Kategoria wiekowa jest wymagana",
         "minMembers": "Wybierz minimum 3 członków drużyny",
-        "maxMembers": "Maksymalnie można wybrać 7 członków drużyny"
+        "maxMembers": "Maksymalnie można wybrać 4 członków drużyny"
       }
     },
     "zawodnicy": {

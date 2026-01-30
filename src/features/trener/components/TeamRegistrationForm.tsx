@@ -14,7 +14,7 @@ const teamRegistrationSchema = z.object({
   teamName: z.string().min(1, 'teamNameRequired'),
   type: z.enum(['kata', 'kumite'], { message: 'typeRequired' }),
   ageCategory: z.string().min(1, 'ageCategoryRequired'),
-  memberIds: z.array(z.string()).min(3, 'minMembers').max(7, 'maxMembers'),
+  memberIds: z.array(z.string()).min(3, 'minMembers').max(4, 'maxMembers'),
 });
 
 type TeamFormData = z.infer<typeof teamRegistrationSchema>;
@@ -145,7 +145,7 @@ export function TeamRegistrationForm() {
           <label className="registration-form__label">
             {t('rejestracjaDruzynowa.members')}
             <span className="registration-form__counter">
-              {' '}({t('rejestracjaDruzynowa.selected')}: {selectedMembers.length}/7)
+              {' '}({t('rejestracjaDruzynowa.selected')}: {selectedMembers.length}/4)
             </span>
           </label>
           <Controller
