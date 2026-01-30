@@ -9,11 +9,7 @@ import './KataResultForm.css';
 const kataResultSchema = z.object({
   competitionId: z.string().min(1, 'competitionRequired'),
   competitorId: z.string().min(1, 'competitorRequired'),
-  technicalPoints: z.string()
-    .refine(val => val !== '' && !isNaN(Number(val)), { message: 'pointsRequired' })
-    .refine(val => Number(val) >= 0, { message: 'pointsMin' })
-    .refine(val => Number(val) <= 10, { message: 'pointsMax' }),
-  athleticPoints: z.string()
+  points: z.string()
     .refine(val => val !== '' && !isNaN(Number(val)), { message: 'pointsRequired' })
     .refine(val => Number(val) >= 0, { message: 'pointsMin' })
     .refine(val => Number(val) <= 10, { message: 'pointsMax' }),
@@ -39,8 +35,7 @@ export function KataResultForm() {
     defaultValues: {
       competitionId: '',
       competitorId: '',
-      technicalPoints: '',
-      athleticPoints: '',
+      points: '',
     },
   });
 
@@ -64,8 +59,7 @@ export function KataResultForm() {
       {
         competitionId: data.competitionId,
         competitorId: data.competitorId,
-        technicalPoints: Number(data.technicalPoints),
-        athleticPoints: Number(data.athleticPoints),
+        points: Number(data.points),
       },
       {
         onSuccess: () => {
@@ -140,44 +134,23 @@ export function KataResultForm() {
         )}
 
         {selectedCompetitionId && (
-          <div className="kata-form__points-row">
-            <div className="kata-form__group">
-              <label className="kata-form__label">
-                {t('zapisywanieWynikow.kata.technicalPoints')}
-              </label>
-              <input
-                type="number"
-                min="0"
-                max="10"
-                step="0.1"
-                className={`kata-form__input ${errors.technicalPoints ? 'kata-form__input--error' : ''}`}
-                {...register('technicalPoints')}
-              />
-              {errors.technicalPoints && (
-                <div className="kata-form__error">
-                  {t(`zapisywanieWynikow.kata.errors.${errors.technicalPoints.message}`)}
-                </div>
-              )}
-            </div>
-
-            <div className="kata-form__group">
-              <label className="kata-form__label">
-                {t('zapisywanieWynikow.kata.athleticPoints')}
-              </label>
-              <input
-                type="number"
-                min="0"
-                max="10"
-                step="0.1"
-                className={`kata-form__input ${errors.athleticPoints ? 'kata-form__input--error' : ''}`}
-                {...register('athleticPoints')}
-              />
-              {errors.athleticPoints && (
-                <div className="kata-form__error">
-                  {t(`zapisywanieWynikow.kata.errors.${errors.athleticPoints.message}`)}
-                </div>
-              )}
-            </div>
+          <div className="kata-form__group">
+            <label className="kata-form__label">
+              {t('zapisywanieWynikow.kata.points')}
+            </label>
+            <input
+              type="number"
+              min="0"
+              max="10"
+              step="0.1"
+              className={`kata-form__input ${errors.points ? 'kata-form__input--error' : ''}`}
+              {...register('points')}
+            />
+            {errors.points && (
+              <div className="kata-form__error">
+                {t(`zapisywanieWynikow.kata.errors.${errors.points.message}`)}
+              </div>
+            )}
           </div>
         )}
 

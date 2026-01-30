@@ -105,8 +105,7 @@
         "selectCompetitionPlaceholder": "-- Wybierz konkurencję kata --",
         "selectCompetitor": "Zawodnik",
         "selectCompetitorPlaceholder": "-- Wybierz zawodnika --",
-        "technicalPoints": "Punkty techniczne (0-10)",
-        "athleticPoints": "Punkty atletyczne (0-10)",
+        "points": "Punkty (0-10)",
         "submit": "Zapisz wynik",
         "success": "Wynik kata został pomyślnie zapisany",
         "errors": {

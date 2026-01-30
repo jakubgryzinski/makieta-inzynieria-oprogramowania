@@ -44,8 +44,7 @@ export interface KataCompetitor {
 export interface KataResult {
   competitionId: string;
   competitorId: string;
-  technicalPoints: number;
-  athleticPoints: number;
+  points: number;
 }
 
 export interface KataResultResponse {
