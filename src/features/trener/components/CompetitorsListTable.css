@@ -1,0 +1,57 @@
+.competitors-list-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.competitors-list-table th,
+.competitors-list-table td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.competitors-list-table th {
+  background-color: #f9fafb;
+  font-weight: 600;
+  color: #374151;
+}
+
+.competitors-list-table tbody tr:hover {
+  background-color: #f3f4f6;
+}
+
+.competitors-list-table__competitions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+}
+
+.competitors-list-table__badge {
+  background-color: #dbeafe;
+  color: #1e40af;
+  padding: 0.125rem 0.5rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+}
+
+.competitors-list-table__no-data {
+  color: #6b7280;
+  font-style: italic;
+}
+
+.competitors-list-table__place {
+  font-weight: 600;
+}
+
+.competitors-list-table__place--1 {
+  color: #ca8a04;
+}
+
+.competitors-list-table__place--2 {
+  color: #64748b;
+}
+
+.competitors-list-table__place--3 {
+  color: #b45309;
+}

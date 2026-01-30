@@ -64,7 +64,7 @@
             "Verify table displays 8 competitors",
             "Check columns: name, age, competitions, next match, last result"
         ],
-        "passes": false
+        "passes": true
     },
     {
         "category": "trener",

@@ -51,3 +51,21 @@ export interface TeamRegistrationResponse {
   id: string;
   message: string;
 }
+
+export interface FullCompetitor {
+  id: string;
+  firstName: string;
+  lastName: string;
+  age: number;
+  competitions: string[];
+  nextMatch: {
+    date: string;
+    time: string;
+    competitionName: string;
+  } | null;
+  lastResult: {
+    competition: string;
+    place: number;
+    date: string;
+  } | null;
+}

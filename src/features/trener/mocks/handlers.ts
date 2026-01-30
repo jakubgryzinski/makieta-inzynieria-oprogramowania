@@ -1,5 +1,5 @@
 import { http, HttpResponse } from 'msw';
-import { mockCoachCompetitors, mockTeamMembers } from './data';
+import { mockCoachCompetitors, mockFullCompetitors, mockTeamMembers } from './data';
 
 export const trenerHandlers = [
   http.get('/api/v1/trener/competitors', () => {
@@ -22,5 +22,9 @@ export const trenerHandlers = [
       id: crypto.randomUUID(),
       message: 'Drużyna została zarejestrowana',
     });
+  }),
+
+  http.get('/api/v1/trener/competitors/full', () => {
+    return HttpResponse.json(mockFullCompetitors);
   }),
 ];

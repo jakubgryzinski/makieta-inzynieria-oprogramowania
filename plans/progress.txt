@@ -45,3 +45,17 @@ Task 4 DONE: Team registration form works
   - Success toast on submit (3s auto-dismiss)
 - Updated pl.json translations for team registration
 - Updated route /trener/rejestracja-druzynowa to use form component
+
+Task 5 DONE: Competitors list shows full details
+- Added FullCompetitor type (id, firstName, lastName, age, competitions, nextMatch, lastResult)
+- Added mockFullCompetitors data (8 competitors)
+- Added TrenerService.getFullCompetitors() method
+- Added MSW handler: GET /api/v1/trener/competitors/full
+- Added useFullCompetitors hook
+- Created CompetitorsListTable component with:
+  - Columns: name, age, competitions, next match, last result
+  - Competition badges
+  - Place coloring for 1st/2nd/3rd
+  - "Brak" text for null values
+- Updated zawodnicy.tsx route to use component
+- Updated pl.json translations for zawodnicy.table.*

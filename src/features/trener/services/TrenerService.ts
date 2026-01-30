@@ -3,6 +3,7 @@ import type {
   CoachCompetitor,
   CompetitorRegistration,
   CompetitorRegistrationResponse,
+  FullCompetitor,
   TeamMember,
   TeamRegistration,
   TeamRegistrationResponse,
@@ -36,6 +37,11 @@ class TrenerService {
       '/trener/teams',
       registration
     );
+    return data;
+  }
+
+  async getFullCompetitors(): Promise<FullCompetitor[]> {
+    const { data } = await this.fetchService.get<FullCompetitor[]>('/trener/competitors/full');
     return data;
   }
 }

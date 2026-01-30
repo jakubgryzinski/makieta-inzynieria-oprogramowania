@@ -143,7 +143,16 @@
       }
     },
     "zawodnicy": {
-      "title": "Zawodnicy"
+      "title": "Zawodnicy",
+      "table": {
+        "name": "Imię i nazwisko",
+        "age": "Wiek",
+        "competitions": "Konkurencje",
+        "nextMatch": "Najbliższy występ",
+        "lastResult": "Ostatni wynik",
+        "noMatch": "Brak",
+        "noResult": "Brak"
+      }
     },
     "dyscypliny": {
       "title": "Dyscypliny"

@@ -1,4 +1,4 @@
-import type { CoachCompetitor, TeamMember } from '../types';
+import type { CoachCompetitor, FullCompetitor, TeamMember } from '../types';
 
 export const mockTeamMembers: TeamMember[] = [
   { id: 'tm-1', firstName: 'Jan', lastName: 'Kowalski' },
@@ -64,5 +64,80 @@ export const mockCoachCompetitors: CoachCompetitor[] = [
       time: '16:45',
       competitionName: 'Kumite -84kg',
     },
+  },
+];
+
+export const mockFullCompetitors: FullCompetitor[] = [
+  {
+    id: 'fc-1',
+    firstName: 'Jan',
+    lastName: 'Kowalski',
+    age: 22,
+    competitions: ['Kumite -67kg', 'Kata indywidualne'],
+    nextMatch: { date: '15.01.2025', time: '14:30', competitionName: 'Kumite -67kg' },
+    lastResult: { competition: 'Kumite -67kg', place: 2, date: '10.12.2024' },
+  },
+  {
+    id: 'fc-2',
+    firstName: 'Anna',
+    lastName: 'Nowak',
+    age: 19,
+    competitions: ['Kata indywidualne', 'Kata drużynowe'],
+    nextMatch: { date: '15.01.2025', time: '15:00', competitionName: 'Kata indywidualne' },
+    lastResult: { competition: 'Kata indywidualne', place: 1, date: '10.12.2024' },
+  },
+  {
+    id: 'fc-3',
+    firstName: 'Piotr',
+    lastName: 'Wiśniewski',
+    age: 25,
+    competitions: ['Kumite -75kg'],
+    nextMatch: { date: '16.01.2025', time: '10:00', competitionName: 'Kumite -75kg' },
+    lastResult: { competition: 'Kumite -75kg', place: 3, date: '05.11.2024' },
+  },
+  {
+    id: 'fc-4',
+    firstName: 'Maria',
+    lastName: 'Lewandowska',
+    age: 17,
+    competitions: ['Kumite -55kg', 'Kata indywidualne'],
+    nextMatch: null,
+    lastResult: { competition: 'Kata indywidualne', place: 4, date: '01.10.2024' },
+  },
+  {
+    id: 'fc-5',
+    firstName: 'Tomasz',
+    lastName: 'Zieliński',
+    age: 28,
+    competitions: ['Kumite -84kg'],
+    nextMatch: { date: '15.01.2025', time: '16:45', competitionName: 'Kumite -84kg' },
+    lastResult: null,
+  },
+  {
+    id: 'fc-6',
+    firstName: 'Katarzyna',
+    lastName: 'Wójcik',
+    age: 20,
+    competitions: ['Kata indywidualne'],
+    nextMatch: { date: '15.01.2025', time: '11:15', competitionName: 'Kata indywidualne' },
+    lastResult: { competition: 'Kata indywidualne', place: 2, date: '15.11.2024' },
+  },
+  {
+    id: 'fc-7',
+    firstName: 'Michał',
+    lastName: 'Kamiński',
+    age: 16,
+    competitions: ['Kumite -60kg', 'Kata indywidualne'],
+    nextMatch: { date: '16.01.2025', time: '09:30', competitionName: 'Kumite -60kg' },
+    lastResult: { competition: 'Kumite -60kg', place: 1, date: '20.11.2024' },
+  },
+  {
+    id: 'fc-8',
+    firstName: 'Ewa',
+    lastName: 'Szymańska',
+    age: 23,
+    competitions: ['Kumite -61kg'],
+    nextMatch: null,
+    lastResult: { competition: 'Kumite -61kg', place: 3, date: '08.12.2024' },
   },
 ];
