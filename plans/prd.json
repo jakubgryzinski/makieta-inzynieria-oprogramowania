@@ -128,7 +128,7 @@
             "Verify 4 stat cards displayed",
             "Check: competitors (156), competitions (24), mats (6), referees (18)"
         ],
-        "passes": false
+        "passes": true
     },
     {
         "category": "organizator",

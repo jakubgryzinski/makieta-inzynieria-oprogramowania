@@ -1,0 +1,1 @@
+export { organizatorService } from './OrganizatorService';

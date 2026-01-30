@@ -41,7 +41,14 @@
   },
   "organizator": {
     "dashboard": {
-      "title": "Panel organizatora"
+      "title": "Panel organizatora",
+      "loading": "Ładowanie...",
+      "stats": {
+        "competitors": "Zawodnicy",
+        "competitions": "Konkurencje",
+        "mats": "Maty",
+        "referees": "Sędziowie"
+      }
     },
     "konfiguracja": {
       "title": "Konfiguracja turnieju"

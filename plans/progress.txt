@@ -121,3 +121,18 @@ Task 9 DONE: Kata result entry works
   - Success toast on submit (3s auto-dismiss)
 - Updated zapisywanie-wynikow.tsx route to include KataResultForm
 - Updated pl.json translations for sedzia.zapisywanieWynikow.kata.*
+
+Task 10 DONE: organizator - Dashboard shows tournament statistics
+- Created src/features/organizator/ module (types, services, hooks, mocks, components)
+- Added types: TournamentStats
+- Added mock data: mockTournamentStats (competitors: 156, competitions: 24, mats: 6, referees: 18)
+- Added OrganizatorService.getTournamentStats() method
+- Added MSW handler: GET /api/v1/organizator/stats
+- Added useTournamentStats hook
+- Created StatCards component with:
+  - Grid of 4 stat cards
+  - Each card shows: value + label
+  - Styled with CSS (blue value, gray label)
+- Updated handlers.ts to include organizatorHandlers
+- Updated dashboard.tsx route to use StatCards
+- Updated pl.json translations for organizator.dashboard.stats.*
