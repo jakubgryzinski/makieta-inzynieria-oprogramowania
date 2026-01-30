@@ -1,0 +1,1 @@
+export { sedziaService } from './SedziaService';

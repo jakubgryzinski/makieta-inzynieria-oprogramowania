@@ -89,7 +89,7 @@
             "Verify 'Enter result' button in actions column",
             "Click button navigates to /sedzia/zapisywanie-wynikow"
         ],
-        "passes": false
+        "passes": true
     },
     {
         "category": "sedzia",

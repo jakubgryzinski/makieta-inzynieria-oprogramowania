@@ -74,3 +74,18 @@ Task 6 DONE: Disciplines view shows cards and participants
   - Close button to hide table
 - Updated dyscypliny.tsx route to use DisciplinesView
 - Updated pl.json translations for dyscypliny.*
+
+Task 7 DONE: Schedule shows assigned matches (sedzia)
+- Created src/features/sedzia/ module (types, services, hooks, mocks, components)
+- Added types: MatchStatus, Match
+- Added mock data: mockMatches (12 matches)
+- Added SedziaService.getMatches() method
+- Added MSW handler: GET /api/v1/sedzia/matches
+- Added useMatches hook
+- Created ScheduleTable component with:
+  - Columns: time, mat, competition, competitors, status, actions
+  - Status badges (oczekujacy/w_trakcie/zakonczony)
+  - "Wpisz wynik" button links to /sedzia/zapisywanie-wynikow
+- Updated handlers.ts to include sedziaHandlers
+- Updated harmonogram.tsx route to use ScheduleTable
+- Updated pl.json translations for sedzia.harmonogram.*

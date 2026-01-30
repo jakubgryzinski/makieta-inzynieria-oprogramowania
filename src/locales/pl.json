@@ -58,7 +58,21 @@
   },
   "sedzia": {
     "harmonogram": {
-      "title": "Harmonogram"
+      "title": "Harmonogram",
+      "table": {
+        "time": "Godzina",
+        "mat": "Mata",
+        "competition": "Konkurencja",
+        "competitors": "Zawodnicy",
+        "status": "Status",
+        "actions": "Akcje"
+      },
+      "statuses": {
+        "oczekujacy": "Oczekujący",
+        "w_trakcie": "W trakcie",
+        "zakonczony": "Zakończony"
+      },
+      "enterResult": "Wpisz wynik"
     },
     "zapisywanieWynikow": {
       "title": "Zapisywanie wyników"
