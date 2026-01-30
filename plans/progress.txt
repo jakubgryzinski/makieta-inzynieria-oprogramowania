@@ -21,3 +21,10 @@ Task 2 DONE: Individual competitor registration form
   - Success toast on submit (3s auto-dismiss)
 - Updated pl.json translations for all form labels/errors
 - Updated route /trener/rejestracja to use form component
+
+Task 3 DONE: Registration form validates input correctly
+- Fixed Zod v4 gender enum syntax: `{ error: ... }` → `{ message: ... }`
+- Validation already in place for:
+  - Empty form: shows all required field errors
+  - Age: min 8, max 50 (5 or 100 shows ageMin/ageMax error)
+  - Medical exam: must be checked (shows medicalExamRequired)

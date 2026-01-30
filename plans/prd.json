@@ -39,7 +39,7 @@
             "Uncheck medical exam",
             "Verify medical exam required error"
         ],
-        "passes": false
+        "passes": true
     },
     {
         "category": "trener",

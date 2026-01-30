@@ -18,7 +18,7 @@ const registrationSchema = z.object({
     .refine(val => Number(val) <= 50, { message: 'ageMax' }),
   weight: z.string().refine(val => val !== '' && !isNaN(Number(val)), { message: 'weightRequired' })
     .refine(val => Number(val) >= 20, { message: 'weightMin' }),
-  gender: z.enum(['M', 'K'], { error: 'genderRequired' }),
+  gender: z.enum(['M', 'K'], { message: 'genderRequired' }),
   medicalExam: z.boolean().refine(val => val === true, { message: 'medicalExamRequired' }),
   kata: z.boolean(),
   kumite: z.boolean(),
