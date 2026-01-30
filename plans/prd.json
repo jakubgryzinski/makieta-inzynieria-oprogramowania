@@ -142,7 +142,7 @@
             "Verify success toast appears",
             "Verify POST request sent to API"
         ],
-        "passes": false
+        "passes": true
     },
     {
         "category": "organizator",

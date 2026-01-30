@@ -51,7 +51,33 @@
       }
     },
     "konfiguracja": {
-      "title": "Konfiguracja turnieju"
+      "title": "Konfiguracja turnieju",
+      "name": "Nazwa turnieju",
+      "date": "Data",
+      "location": "Lokalizacja",
+      "mats": "Liczba mat",
+      "warmUpStations": "Stanowiska rozgrzewkowe",
+      "restStations": "Stanowiska odpoczynku",
+      "referees": "Liczba sędziów",
+      "maxCompetitorsPerCoach": "Max zawodników na trenera",
+      "submit": "Zapisz konfigurację",
+      "success": "Konfiguracja została zapisana",
+      "errors": {
+        "nameRequired": "Nazwa turnieju jest wymagana",
+        "dateRequired": "Data jest wymagana",
+        "locationRequired": "Lokalizacja jest wymagana",
+        "matsRequired": "Liczba mat jest wymagana",
+        "matsMin": "Minimum 1 mata",
+        "matsMax": "Maksimum 20 mat",
+        "warmUpStationsRequired": "Liczba stanowisk rozgrzewkowych jest wymagana",
+        "warmUpStationsMin": "Minimum 0 stanowisk",
+        "restStationsRequired": "Liczba stanowisk odpoczynku jest wymagana",
+        "restStationsMin": "Minimum 0 stanowisk",
+        "refereesRequired": "Liczba sędziów jest wymagana",
+        "refereesMin": "Minimum 1 sędzia",
+        "maxCompetitorsRequired": "Max zawodników na trenera jest wymagane",
+        "maxCompetitorsMin": "Minimum 1 zawodnik"
+      }
     },
     "konkurencje": {
       "title": "Konkurencje"

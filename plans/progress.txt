@@ -136,3 +136,17 @@ Task 10 DONE: organizator - Dashboard shows tournament statistics
 - Updated handlers.ts to include organizatorHandlers
 - Updated dashboard.tsx route to use StatCards
 - Updated pl.json translations for organizator.dashboard.stats.*
+
+Task 11 DONE: organizator - Tournament configuration form works
+- Added types: TournamentConfig, TournamentConfigResponse
+- Added OrganizatorService.saveTournamentConfig() POST method
+- Added MSW handler: POST /api/v1/organizator/config
+- Added useSaveTournamentConfig hook
+- Created TournamentConfigForm component with:
+  - Fields: name, date (date picker), location
+  - Number inputs: mats, warmUpStations, restStations
+  - Number inputs: referees, maxCompetitorsPerCoach
+  - Zod validation for all fields
+  - Success toast on submit (3s auto-dismiss)
+- Updated konfiguracja.tsx route to use TournamentConfigForm
+- Updated pl.json translations for organizator.konfiguracja.*
