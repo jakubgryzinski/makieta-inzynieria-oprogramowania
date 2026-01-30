@@ -105,3 +105,19 @@ Task 8 DONE: Kumite result entry works
   - Success toast on submit (3s auto-dismiss)
 - Updated zapisywanie-wynikow.tsx route to use KumiteResultForm
 - Updated pl.json translations for sedzia.zapisywanieWynikow.kumite.*
+
+Task 9 DONE: Kata result entry works
+- Added types: KataCompetition, KataCompetitor, KataResult, KataResultResponse
+- Added mock data: mockKataCompetitions (4 kata competitions), mockKataCompetitors (per competition)
+- Added SedziaService.getKataCompetitions(), getKataCompetitors(id), submitKataResult() methods
+- Added MSW handlers: GET /api/v1/sedzia/kata-competitions, GET /api/v1/sedzia/kata-competitions/:id/competitors, POST /api/v1/sedzia/kata-results
+- Added hooks: useKataCompetitions, useKataCompetitors, useSubmitKataResult
+- Created KataResultForm component with:
+  - Dropdown to select kata competition
+  - Dropdown to select competitor (loads dynamically per competition)
+  - Technical points input (0-10)
+  - Athletic points input (0-10)
+  - Zod validation for all fields
+  - Success toast on submit (3s auto-dismiss)
+- Updated zapisywanie-wynikow.tsx route to include KataResultForm
+- Updated pl.json translations for sedzia.zapisywanieWynikow.kata.*

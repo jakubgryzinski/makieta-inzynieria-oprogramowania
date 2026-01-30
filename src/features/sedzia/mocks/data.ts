@@ -1,4 +1,4 @@
-import type { Match, KumiteCompetition } from '../types';
+import type { Match, KumiteCompetition, KataCompetition, KataCompetitor } from '../types';
 
 export const mockKumiteCompetitions: KumiteCompetition[] = [
   {
@@ -143,3 +143,33 @@ export const mockMatches: Match[] = [
     status: 'oczekujacy',
   },
 ];
+
+export const mockKataCompetitions: KataCompetition[] = [
+  { id: 'kata1', name: 'Kata Junior' },
+  { id: 'kata2', name: 'Kata Senior' },
+  { id: 'kata3', name: 'Kata Młodzik' },
+  { id: 'kata4', name: 'Kata Dzieci' },
+];
+
+export const mockKataCompetitors: Record<string, KataCompetitor[]> = {
+  kata1: [
+    { id: 'kc1', name: 'Anna Wiśniewska' },
+    { id: 'kc2', name: 'Maria Zielińska' },
+    { id: 'kc3', name: 'Szymon Pawłowski' },
+    { id: 'kc4', name: 'Mateusz Michalski' },
+  ],
+  kata2: [
+    { id: 'kc5', name: 'Katarzyna Wójcik' },
+    { id: 'kc6', name: 'Agnieszka Kowalczyk' },
+    { id: 'kc7', name: 'Robert Nowakowski' },
+  ],
+  kata3: [
+    { id: 'kc8', name: 'Zofia Dąbrowska' },
+    { id: 'kc9', name: 'Julia Kozłowska' },
+    { id: 'kc10', name: 'Bartosz Kaczmarek' },
+  ],
+  kata4: [
+    { id: 'kc11', name: 'Maja Wiśniewska' },
+    { id: 'kc12', name: 'Alicja Szymańska' },
+  ],
+};

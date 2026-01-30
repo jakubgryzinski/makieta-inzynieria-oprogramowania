@@ -30,3 +30,25 @@ export interface KumiteResultResponse {
   success: boolean;
   message: string;
 }
+
+export interface KataCompetition {
+  id: string;
+  name: string;
+}
+
+export interface KataCompetitor {
+  id: string;
+  name: string;
+}
+
+export interface KataResult {
+  competitionId: string;
+  competitorId: string;
+  technicalPoints: number;
+  athleticPoints: number;
+}
+
+export interface KataResultResponse {
+  success: boolean;
+  message: string;
+}

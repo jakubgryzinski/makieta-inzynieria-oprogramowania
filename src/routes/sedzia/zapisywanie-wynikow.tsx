@@ -1,6 +1,6 @@
 import { createFileRoute } from '@tanstack/react-router';
 import { useTranslation } from 'react-i18next';
-import { KumiteResultForm } from '@/features/sedzia/components';
+import { KumiteResultForm, KataResultForm } from '@/features/sedzia/components';
 
 export const Route = createFileRoute('/sedzia/zapisywanie-wynikow')({
   component: SedziaZapisywanieWynikow,
@@ -16,7 +16,8 @@ function SedziaZapisywanieWynikow() {
       <h2>{t('zapisywanieWynikow.kumite.sectionTitle')}</h2>
       <KumiteResultForm />
 
-      {/* TODO: Phase 9 - KATA form - competitor dropdown, technical/athletic points */}
+      <h2 style={{ marginTop: '2rem' }}>{t('zapisywanieWynikow.kata.sectionTitle')}</h2>
+      <KataResultForm />
     </div>
   );
 }
