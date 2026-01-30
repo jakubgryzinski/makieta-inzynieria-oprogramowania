@@ -158,7 +158,7 @@
             "Click delete on a competition",
             "Verify competition removed"
         ],
-        "passes": false
+        "passes": true
     },
     {
         "category": "organizator",

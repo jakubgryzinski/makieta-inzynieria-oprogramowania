@@ -80,7 +80,51 @@
       }
     },
     "konkurencje": {
-      "title": "Konkurencje"
+      "title": "Konkurencje",
+      "loading": "Ladowanie...",
+      "competitionsCount": "konkurencji",
+      "addButton": "Dodaj konkurencje",
+      "addSuccess": "Konkurencja zostala dodana",
+      "deleteSuccess": "Konkurencja zostala usunieta",
+      "delete": "Usun",
+      "table": {
+        "name": "Nazwa",
+        "type": "Typ",
+        "gender": "Plec",
+        "age": "Wiek",
+        "weight": "Waga",
+        "participants": "Uczestnikow",
+        "actions": "Akcje"
+      },
+      "genders": {
+        "M": "Mezczyzni",
+        "K": "Kobiety",
+        "mixed": "Mieszana"
+      },
+      "modal": {
+        "title": "Dodaj konkurencje",
+        "name": "Nazwa konkurencji",
+        "type": "Typ",
+        "typePlaceholder": "-- Wybierz typ --",
+        "gender": "Plec",
+        "genderPlaceholder": "-- Wybierz plec --",
+        "ageMin": "Wiek min",
+        "ageMax": "Wiek max",
+        "weightMin": "Waga min (kg)",
+        "weightMax": "Waga max (kg)",
+        "submit": "Dodaj"
+      },
+      "errors": {
+        "nameRequired": "Nazwa jest wymagana",
+        "typeRequired": "Typ jest wymagany",
+        "genderRequired": "Plec jest wymagana",
+        "ageMinRequired": "Wiek minimalny jest wymagany",
+        "ageMinMin": "Wiek minimalny to 6 lat",
+        "ageMinMax": "Wiek maksymalny to 60 lat",
+        "ageMaxRequired": "Wiek maksymalny jest wymagany",
+        "ageMaxMin": "Wiek minimalny to 6 lat",
+        "ageMaxMax": "Wiek maksymalny to 60 lat"
+      }
     },
     "zasoby": {
       "title": "Zasoby"

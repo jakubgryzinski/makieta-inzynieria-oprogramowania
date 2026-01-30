@@ -150,3 +150,19 @@ Task 11 DONE: organizator - Tournament configuration form works
   - Success toast on submit (3s auto-dismiss)
 - Updated konfiguracja.tsx route to use TournamentConfigForm
 - Updated pl.json translations for organizator.konfiguracja.*
+
+Task 12 DONE: organizator - Competition management CRUD works
+- Added types: Competition, CompetitionCreate, CompetitionResponse, CompetitionType, CompetitionGender
+- Added mock data: mockCompetitions (15 competitions - kata/kumite, various age/weight categories)
+- Added OrganizatorService methods: getCompetitions(), addCompetition(), deleteCompetition()
+- Added MSW handlers: GET/POST/DELETE /api/v1/organizator/competitions
+- Added hooks: useCompetitions, useAddCompetition, useDeleteCompetition (with query invalidation)
+- Created CompetitionsTable component with:
+  - Table displaying 15 competitions
+  - Columns: name, type (badge), gender, age range, weight range, participants, actions
+  - "Dodaj konkurencje" button opens modal
+  - Modal form with Zod validation: name, type, gender, ageMin, ageMax, weightMin/Max (conditional for kumite)
+  - Delete button on each row
+  - Success toast on add/delete (3s auto-dismiss)
+- Updated konkurencje.tsx route to use CompetitionsTable
+- Updated pl.json translations for organizator.konkurencje.*
