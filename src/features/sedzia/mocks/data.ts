@@ -1,4 +1,37 @@
-import type { Match } from '../types';
+import type { Match, KumiteCompetition } from '../types';
+
+export const mockKumiteCompetitions: KumiteCompetition[] = [
+  {
+    id: 'k1',
+    name: 'Kumite Junior -60kg',
+    competitor1: 'Jan Kowalski',
+    competitor2: 'Piotr Nowak',
+  },
+  {
+    id: 'k2',
+    name: 'Kumite Senior -70kg',
+    competitor1: 'Tomasz Kamiński',
+    competitor2: 'Michał Lewandowski',
+  },
+  {
+    id: 'k3',
+    name: 'Kumite Dzieci -30kg',
+    competitor1: 'Filip Mazur',
+    competitor2: 'Jakub Krawczyk',
+  },
+  {
+    id: 'k4',
+    name: 'Kumite Junior -65kg',
+    competitor1: 'Paweł Szymański',
+    competitor2: 'Krzysztof Woźniak',
+  },
+  {
+    id: 'k5',
+    name: 'Kumite Senior -75kg',
+    competitor1: 'Adam Jankowski',
+    competitor2: 'Marcin Wojciechowski',
+  },
+];
 
 export const mockMatches: Match[] = [
  {

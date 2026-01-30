@@ -89,3 +89,19 @@ Task 7 DONE: Schedule shows assigned matches (sedzia)
 - Updated handlers.ts to include sedziaHandlers
 - Updated harmonogram.tsx route to use ScheduleTable
 - Updated pl.json translations for sedzia.harmonogram.*
+
+Task 8 DONE: Kumite result entry works
+- Added types: CompetitionType, KumiteCompetition, KumiteResult, KumiteResultResponse
+- Added mock data: mockKumiteCompetitions (5 kumite competitions)
+- Added SedziaService.getKumiteCompetitions(), submitKumiteResult() methods
+- Added MSW handlers: GET /api/v1/sedzia/kumite-competitions, POST /api/v1/sedzia/kumite-results
+- Added hooks: useKumiteCompetitions, useSubmitKumiteResult
+- Created KumiteResultForm component with:
+  - Dropdown to select kumite competition
+  - Two competitor names displayed
+  - Points input for both competitors (0-10)
+  - Winner radio selection
+  - Zod validation for all fields
+  - Success toast on submit (3s auto-dismiss)
+- Updated zapisywanie-wynikow.tsx route to use KumiteResultForm
+- Updated pl.json translations for sedzia.zapisywanieWynikow.kumite.*

@@ -1,0 +1,118 @@
+.kumite-form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.kumite-form__group {
+  margin-bottom: 16px;
+}
+
+.kumite-form__label {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: 500;
+}
+
+.kumite-form__select,
+.kumite-form__input {
+  width: 100%;
+  padding: 8px 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.kumite-form__select--error,
+.kumite-form__input--error {
+  border-color: #dc3545;
+}
+
+.kumite-form__error {
+  color: #dc3545;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.kumite-form__competitors {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 16px;
+  padding: 16px;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+}
+
+.kumite-form__competitor {
+  text-align: center;
+}
+
+.kumite-form__competitor-name {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.kumite-form__points-label {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 14px;
+}
+
+.kumite-form__winner-group {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}
+
+.kumite-form__radio-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.kumite-form__submit {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 16px;
+}
+
+.kumite-form__submit:hover {
+  background-color: #0056b3;
+}
+
+.kumite-form__submit:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.kumite-form__toast {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 16px 24px;
+  background-color: #28a745;
+  color: white;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

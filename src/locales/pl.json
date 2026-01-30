@@ -75,7 +75,23 @@
       "enterResult": "Wpisz wynik"
     },
     "zapisywanieWynikow": {
-      "title": "Zapisywanie wyników"
+      "title": "Zapisywanie wyników",
+      "kumite": {
+        "sectionTitle": "Wynik Kumite",
+        "selectCompetition": "Konkurencja",
+        "selectPlaceholder": "-- Wybierz konkurencję kumite --",
+        "points": "Punkty (0-10)",
+        "winner": "Zwycięzca",
+        "submit": "Zapisz wynik",
+        "success": "Wynik został pomyślnie zapisany",
+        "errors": {
+          "competitionRequired": "Wybierz konkurencję",
+          "pointsRequired": "Punkty są wymagane",
+          "pointsMin": "Minimum 0 punktów",
+          "pointsMax": "Maksimum 10 punktów",
+          "winnerRequired": "Wybierz zwycięzcę"
+        }
+      }
     }
   },
   "trener": {
