@@ -28,3 +28,20 @@ Task 3 DONE: Registration form validates input correctly
   - Empty form: shows all required field errors
   - Age: min 8, max 50 (5 or 100 shows ageMin/ageMax error)
   - Medical exam: must be checked (shows medicalExamRequired)
+
+Task 4 DONE: Team registration form works
+- Added types: TeamType, TeamMember, TeamRegistration, TeamRegistrationResponse
+- Added mock data: mockTeamMembers (10 members)
+- Added TrenerService methods: getTeamMembers(), registerTeam()
+- Added MSW handlers: GET /api/v1/trener/team-members, POST /api/v1/trener/teams
+- Added hooks: useTeamMembers, useRegisterTeam
+- Created TeamRegistrationForm component with:
+  - Team name input
+  - Type dropdown (kata/kumite drużynowe)
+  - Age category dropdown
+  - Member checkboxes (Controller for array field)
+  - Counter showing "Wybrano: X/7"
+  - Zod validation: min 3, max 7 members
+  - Success toast on submit (3s auto-dismiss)
+- Updated pl.json translations for team registration
+- Updated route /trener/rejestracja-druzynowa to use form component

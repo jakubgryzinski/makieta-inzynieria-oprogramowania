@@ -121,7 +121,26 @@
       }
     },
     "rejestracjaDruzynowa": {
-      "title": "Rejestracja drużynowa"
+      "title": "Rejestracja drużynowa",
+      "teamName": "Nazwa drużyny",
+      "type": "Typ konkurencji",
+      "typePlaceholder": "-- Wybierz typ --",
+      "types": {
+        "kata": "Kata drużynowe",
+        "kumite": "Kumite drużynowe"
+      },
+      "ageCategory": "Kategoria wiekowa",
+      "members": "Członkowie drużyny",
+      "selected": "Wybrano",
+      "submit": "Zarejestruj drużynę",
+      "success": "Drużyna została pomyślnie zarejestrowana",
+      "errors": {
+        "teamNameRequired": "Nazwa drużyny jest wymagana",
+        "typeRequired": "Typ konkurencji jest wymagany",
+        "ageCategoryRequired": "Kategoria wiekowa jest wymagana",
+        "minMembers": "Wybierz minimum 3 członków drużyny",
+        "maxMembers": "Maksymalnie można wybrać 7 członków drużyny"
+      }
     },
     "zawodnicy": {
       "title": "Zawodnicy"

@@ -1,4 +1,17 @@
-import type { CoachCompetitor } from '../types';
+import type { CoachCompetitor, TeamMember } from '../types';
+
+export const mockTeamMembers: TeamMember[] = [
+  { id: 'tm-1', firstName: 'Jan', lastName: 'Kowalski' },
+  { id: 'tm-2', firstName: 'Anna', lastName: 'Nowak' },
+  { id: 'tm-3', firstName: 'Piotr', lastName: 'Wiśniewski' },
+  { id: 'tm-4', firstName: 'Maria', lastName: 'Lewandowska' },
+  { id: 'tm-5', firstName: 'Tomasz', lastName: 'Zieliński' },
+  { id: 'tm-6', firstName: 'Katarzyna', lastName: 'Wójcik' },
+  { id: 'tm-7', firstName: 'Michał', lastName: 'Kamiński' },
+  { id: 'tm-8', firstName: 'Ewa', lastName: 'Szymańska' },
+  { id: 'tm-9', firstName: 'Adam', lastName: 'Dąbrowski' },
+  { id: 'tm-10', firstName: 'Zofia', lastName: 'Kozłowska' },
+];
 
 export const mockCoachCompetitors: CoachCompetitor[] = [
   {

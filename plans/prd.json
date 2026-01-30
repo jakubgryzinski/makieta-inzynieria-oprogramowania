@@ -54,7 +54,7 @@
             "Submit form",
             "Verify success toast appears"
         ],
-        "passes": false
+        "passes": true
     },
     {
         "category": "trener",

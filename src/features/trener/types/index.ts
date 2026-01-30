@@ -31,3 +31,23 @@ export interface CompetitorRegistrationResponse {
   id: string;
   message: string;
 }
+
+export type TeamType = 'kata' | 'kumite';
+
+export interface TeamMember {
+  id: string;
+  firstName: string;
+  lastName: string;
+}
+
+export interface TeamRegistration {
+  teamName: string;
+  type: TeamType;
+  ageCategory: AgeCategory;
+  memberIds: string[];
+}
+
+export interface TeamRegistrationResponse {
+  id: string;
+  message: string;
+}
