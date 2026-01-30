@@ -1,0 +1,7 @@
+Task 1 DONE: Trener Dashboard - competitors table with next matches
+- Created src/features/trener/ module (types, service, hooks, mocks, components)
+- Added CoachCompetitorsTable component with 5 competitors
+- Columns: name, competitions, next match
+- "Zarejestruj zawodnika" button links to /trener/rejestracja
+- Updated translations, MSW handlers
+- Fixed pre-existing TS errors in user.ts and Navbar.tsx

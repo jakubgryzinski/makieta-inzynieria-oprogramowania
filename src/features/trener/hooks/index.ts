@@ -1,0 +1,1 @@
+export { useCoachCompetitors } from './useCoachCompetitors';

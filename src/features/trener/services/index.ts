@@ -1,0 +1,1 @@
+export { trenerService } from './TrenerService';

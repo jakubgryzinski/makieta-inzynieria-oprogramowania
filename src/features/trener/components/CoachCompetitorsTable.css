@@ -1,0 +1,41 @@
+.coach-competitors-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.coach-competitors-table th,
+.coach-competitors-table td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.coach-competitors-table th {
+  background-color: #f9fafb;
+  font-weight: 600;
+  color: #374151;
+}
+
+.coach-competitors-table tbody tr:hover {
+  background-color: #f3f4f6;
+}
+
+.coach-competitors-table__competitions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+}
+
+.coach-competitors-table__competition-badge {
+  background-color: #dbeafe;
+  color: #1e40af;
+  padding: 0.125rem 0.5rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+}
+
+.coach-competitors-table__no-match {
+  color: #6b7280;
+  font-style: italic;
+}

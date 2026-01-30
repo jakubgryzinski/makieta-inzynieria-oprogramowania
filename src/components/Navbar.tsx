@@ -11,7 +11,7 @@ const roleRoutes = {
   [UserRole.ORGANIZER]: ['dashboard', 'konfiguracja', 'konkurencje', 'zasoby', 'harmonogram'],
 };
 
-const routePaths = {
+const routePaths: Record<string, string> = {
   rejestracjaDruzynowa: 'rejestracja-druzynowa',
   zapisywanieWynikow: 'zapisywanie-wynikow',
 };

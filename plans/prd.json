@@ -9,7 +9,7 @@
             "Verify 'Register competitor' button exists",
             "Click button navigates to /trener/rejestracja"
         ],
-        "passes": false
+        "passes": true
     },
     {
         "category": "trener",

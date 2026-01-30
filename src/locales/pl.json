@@ -66,7 +66,14 @@
   },
   "trener": {
     "dashboard": {
-      "title": "Panel trenera"
+      "title": "Panel trenera",
+      "registerButton": "Zarejestruj zawodnika",
+      "table": {
+        "name": "Imię i nazwisko",
+        "competitions": "Konkurencje",
+        "nextMatch": "Najbliższy występ",
+        "noMatch": "Brak"
+      }
     },
     "rejestracja": {
       "title": "Rejestracja zawodnika"
