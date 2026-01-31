@@ -5,3 +5,5 @@ export { useAddCompetition } from './useAddCompetition';
 export { useDeleteCompetition } from './useDeleteCompetition';
 export { useEquipment } from './useEquipment';
 export { useAwards } from './useAwards';
+export { useMatSchedule } from './useMatSchedule';
+export { useBracket } from './useBracket';

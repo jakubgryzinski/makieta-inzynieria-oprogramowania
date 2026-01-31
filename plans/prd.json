@@ -186,6 +186,6 @@
             "Select competition from dropdown",
             "Verify bracket tree displays for selected competition"
         ],
-        "passes": false
+        "passes": true
     }
 ]

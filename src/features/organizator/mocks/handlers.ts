@@ -1,5 +1,5 @@
 import { http, HttpResponse } from 'msw';
-import { mockTournamentStats, mockCompetitions, mockEquipment, mockAwards } from './data';
+import { mockTournamentStats, mockCompetitions, mockEquipment, mockAwards, mockMatSchedule, mockBrackets } from './data';
 import type { CompetitionCreate, Competition } from '../types';
 
 let competitions = [...mockCompetitions];
@@ -50,5 +50,18 @@ export const organizatorHandlers = [
 
   http.get('/api/v1/organizator/awards', () => {
     return HttpResponse.json(mockAwards);
+  }),
+
+  http.get('/api/v1/organizator/schedule', () => {
+    return HttpResponse.json(mockMatSchedule);
+  }),
+
+  http.get('/api/v1/organizator/brackets/:competitionId', ({ params }) => {
+    const { competitionId } = params;
+    const bracket = mockBrackets.find((b) => b.competitionId === competitionId);
+    if (bracket) {
+      return HttpResponse.json(bracket);
+    }
+    return HttpResponse.json({ competitionId, competitionName: '', nodes: [] });
   }),
 ];

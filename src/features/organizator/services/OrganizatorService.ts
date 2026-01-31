@@ -8,6 +8,8 @@ import type {
   CompetitionResponse,
   Equipment,
   Award,
+  MatScheduleRow,
+  CompetitionBracket,
 } from '../types';
 
 class OrganizatorService {
@@ -45,6 +47,16 @@ class OrganizatorService {
 
   async getAwards(): Promise<Award[]> {
     const { data } = await this.fetchService.get<Award[]>('/organizator/awards');
+    return data;
+  }
+
+  async getMatSchedule(): Promise<MatScheduleRow[]> {
+    const { data } = await this.fetchService.get<MatScheduleRow[]>('/organizator/schedule');
+    return data;
+  }
+
+  async getBracket(competitionId: string): Promise<CompetitionBracket> {
+    const { data } = await this.fetchService.get<CompetitionBracket>(`/organizator/brackets/${competitionId}`);
     return data;
   }
 }

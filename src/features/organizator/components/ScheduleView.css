@@ -1,0 +1,101 @@
+.schedule-view {
+  padding: 1rem;
+}
+
+.schedule-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+}
+
+.schedule-table th,
+.schedule-table td {
+  border: 1px solid #ddd;
+  padding: 0.5rem;
+  text-align: left;
+  font-size: 0.875rem;
+}
+
+.schedule-table th {
+  background-color: #f5f5f5;
+  font-weight: 600;
+}
+
+.schedule-table .time-cell {
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.bracket-section {
+  margin-bottom: 1rem;
+}
+
+.bracket-section label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.bracket-section select {
+  padding: 0.5rem;
+  min-width: 250px;
+  font-size: 1rem;
+}
+
+.bracket-tree {
+  margin-top: 1rem;
+}
+
+.bracket-container {
+  display: flex;
+  gap: 2rem;
+  overflow-x: auto;
+  padding: 1rem 0;
+}
+
+.bracket-column {
+  min-width: 200px;
+}
+
+.bracket-column h4 {
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #3b82f6;
+  color: #3b82f6;
+}
+
+.bracket-match {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+
+.bracket-match.final-match {
+  border-color: #3b82f6;
+  border-width: 2px;
+}
+
+.bracket-competitor {
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid #e5e7eb;
+  font-size: 0.875rem;
+}
+
+.bracket-competitor:last-child {
+  border-bottom: none;
+}
+
+.bracket-competitor.winner {
+  background: #dcfce7;
+  font-weight: 600;
+}
+
+.no-bracket {
+  padding: 1rem;
+  background: #f3f4f6;
+  border-radius: 4px;
+  color: #6b7280;
+  text-align: center;
+}

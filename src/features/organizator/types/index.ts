@@ -65,3 +65,30 @@ export interface Award {
   competition: string;
   quantity: number;
 }
+
+export interface MatScheduleRow {
+  id: string;
+  time: string;
+  mat1: string;
+  mat2: string;
+  mat3: string;
+  mat4: string;
+  mat5: string;
+  mat6: string;
+  referees: string;
+}
+
+export interface BracketNode {
+  id: string;
+  round: string;
+  match: number;
+  competitor1: string | null;
+  competitor2: string | null;
+  winner: string | null;
+}
+
+export interface CompetitionBracket {
+  competitionId: string;
+  competitionName: string;
+  nodes: BracketNode[];
+}

@@ -152,7 +152,27 @@
       }
     },
     "harmonogram": {
-      "title": "Harmonogram"
+      "title": "Harmonogram",
+      "loading": "Ladowanie...",
+      "table": {
+        "time": "Godzina",
+        "mat1": "Mata 1",
+        "mat2": "Mata 2",
+        "mat3": "Mata 3",
+        "mat4": "Mata 4",
+        "mat5": "Mata 5",
+        "mat6": "Mata 6",
+        "referees": "Sedziowie"
+      },
+      "selectCompetition": "Konkurencja",
+      "selectPlaceholder": "-- Wybierz konkurencje --",
+      "noBracket": "Brak drabinki dla wybranej konkurencji",
+      "tbd": "Do ustalenia",
+      "rounds": {
+        "quarterfinals": "Cwiercfinaly",
+        "semifinals": "Polfinaly",
+        "final": "Final"
+      }
     }
   },
   "sedzia": {

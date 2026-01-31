@@ -2,3 +2,4 @@ export { StatCards } from './StatCards';
 export { TournamentConfigForm } from './TournamentConfigForm';
 export { CompetitionsTable } from './CompetitionsTable';
 export { ResourcesView } from './ResourcesView';
+export { ScheduleView } from './ScheduleView';

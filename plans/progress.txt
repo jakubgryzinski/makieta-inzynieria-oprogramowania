@@ -180,3 +180,17 @@ Task 13 DONE: organizator - Resources view shows equipment and awards
   - Download CSV button - shows alert "Pobiera..."
 - Updated zasoby.tsx route to use ResourcesView
 - Updated pl.json translations for organizator.zasoby.*
+
+Task 14 DONE: organizator - Schedule shows mat assignments
+- Added types: MatScheduleRow, BracketNode, CompetitionBracket
+- Added mock data: mockMatSchedule (8 time slots), mockBrackets (2 competitions w/ bracket trees)
+- Added OrganizatorService methods: getMatSchedule(), getBracket(competitionId)
+- Added MSW handlers: GET /api/v1/organizator/schedule, GET /api/v1/organizator/brackets/:competitionId
+- Added hooks: useMatSchedule, useBracket
+- Created ScheduleView component with:
+  - Mat schedule table (columns: time, mat1-6, referees)
+  - Competition dropdown to select competition
+  - Bracket tree for selected competition (quarterfinals, semifinals, final)
+  - Winner highlighting in bracket
+- Updated harmonogram.tsx route to use ScheduleView
+- Updated pl.json translations for organizator.harmonogram.*
