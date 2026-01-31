@@ -5,14 +5,14 @@
 }
 
 .zawodnik-harmonogram__title {
-  color: #ecf0f1;
+  color: #fff;
   font-size: 2rem;
   font-weight: 700;
   margin: 0 0 2rem 0;
 }
 
 .zawodnik-harmonogram__no-matches {
-  color: #95a5a6;
+  color: #666;
   font-size: 1rem;
   font-style: italic;
 }

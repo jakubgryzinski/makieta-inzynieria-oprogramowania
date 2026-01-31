@@ -6,32 +6,34 @@
 .schedule-table__table {
   width: 100%;
   border-collapse: collapse;
-  background-color: #2c3e50;
+  background-color: #fff;
   border-radius: 8px;
   overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .schedule-table__table thead {
-  background-color: #34495e;
+  background-color: #f8f9fa;
 }
 
 .schedule-table__table th {
   padding: 1rem;
   text-align: left;
-  color: #ecf0f1;
+  color: #333;
   font-weight: 600;
   font-size: 0.875rem;
   text-transform: uppercase;
+  border-bottom: 1px solid #ddd;
 }
 
 .schedule-table__table td {
   padding: 0.875rem 1rem;
-  color: #ecf0f1;
-  border-top: 1px solid #34495e;
+  color: #333;
+  border-bottom: 1px solid #ddd;
 }
 
 .schedule-table__table tbody tr:hover {
-  background-color: #34495e;
+  background-color: #f5f5f5;
 }
 
 .schedule-table__status {
@@ -59,7 +61,7 @@
 }
 
 .schedule-table__result {
-  color: #95a5a6;
+  color: #666;
   font-size: 0.875rem;
   margin-left: 0.5rem;
 }
